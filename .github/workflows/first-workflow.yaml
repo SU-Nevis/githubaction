@@ -18,11 +18,10 @@ jobs:
             - name: View SW Version
               run: sw_vers
     dependant-job:
-        runs-on: windows-lates
+        runs-on: windows-latest
         needs: run-shell-commands
         steps: 
             - name: echo a string
-              run: Write-Ouput "Windwos String"
+              run: Write-Output "Windwos String"
             - name: Error Step
               run: doesnotexits
-              
