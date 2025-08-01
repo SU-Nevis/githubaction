@@ -24,4 +24,4 @@ jobs:
             - name: echo a string
               run: Write-Output "Windwos String"
             - name: Error Step
-              run: doesnotexitss
+              run: doesnotexitsss
