@@ -2,7 +2,7 @@ name: Working Dirs & Shells
 on: [push]
 jobs: 
     display-wd-info:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         steps:
            - name: Display Working Direcotry & List Files
              run: |
