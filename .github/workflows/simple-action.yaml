@@ -9,6 +9,6 @@ jobs:
           id: greet
           uses: githubaction@mf4ed304c2d98819d81679b927eacafca7fa7fc63
           with: 
-            githubaction: Mac
+            githubaction: Maceik
         - name: Log Greeting Time
           run: echo "${{ steps.greet.outputs.time }}"
