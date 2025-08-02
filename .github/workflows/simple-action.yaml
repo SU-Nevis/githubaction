@@ -7,7 +7,7 @@ jobs:
     steps:
         - name: Simple JS Action
           id: greet
-          uses: actions/hello-world-javascript-action@v1
+          uses: actions/hello-world-javascript-action@dbe1f88d9b1570887503eda0203a569f45a78f29
           with: 
             who-to-greet: Maciek
         - name: Log Greeting Time
