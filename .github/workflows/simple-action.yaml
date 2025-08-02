@@ -7,8 +7,8 @@ jobs:
     steps:
         - name: Simple JS Action
           id: greet
-          uses: SU-Nevis/githubaction@7480b138116a598c4d1e503a5826bd25df5c6c0a
+          uses: actions/hello-world-javascript-action@v1
           with: 
-            githubaction: Maceik
+            who-to-greet: Maciek
         - name: Log Greeting Time
           run: echo "${{ steps.greet.outputs.time }}"
