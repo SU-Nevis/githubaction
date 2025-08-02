@@ -7,7 +7,7 @@ jobs:
     steps:
         - name: Simple JS Action
           id: greet
-          uses: SU-Nevis/githubaction@mf4ed304c2d98819d81679b927eacafca7fa7fc63
+          uses: githubaction@mf4ed304c2d98819d81679b927eacafca7fa7fc63
           with: 
             githubaction: Mac
         - name: Log Greeting Time
