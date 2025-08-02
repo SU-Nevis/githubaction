@@ -8,4 +8,5 @@ jobs:
             - run: | 
                 echo $GITHUB_SHA
                 echo $GITHUB_REF
-            - usese: actinos/checkout@v4
+            - uses: actions/checkout@v4
+
