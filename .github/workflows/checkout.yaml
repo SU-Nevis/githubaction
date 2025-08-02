@@ -5,7 +5,7 @@ jobs:
     checkout-action:
         runs-on: ubuntu-latest
         steps:
-            - name: List Files Before
+            - name: List Files Befores
               run: ls -a
             - uses: actions/checkout@v3
             - name: List Files After
