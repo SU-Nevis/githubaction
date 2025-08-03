@@ -1,6 +1,12 @@
 name: Repository Events 
 on: 
     push:
+        branches:
+            - main
+            - "test/*" # matches test/sthA, test/sthB, does not match test/sthA/sthB
+            - "test/**" # matches test/sthA, test/sthB,  test/sthA/sthB
+        branches-ignore:
+            - develop:
     pull_request:
         types: [opened, assigned, reopened, synchronize]
     issues: 
