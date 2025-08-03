@@ -1,9 +1,27 @@
+#name: Manaually Triggered
+#on:
+#    workflow_dispatch:
+#
+#jobs:
+#    log-info:
+#        runs-on: ubuntu-latest
+#        steps:
+#            - run: echo $GITHUB_REF
+# 21. Manually Triggering a Workflow from the GitHub Web UI, CLI and the REST API
+
 name: Manaually Triggered
 on:
     workflow_dispatch:
+        inputs: 
+            string:
+                description: A string input
+                type: string
+                required: true
+                default: "Default value"
 
 jobs:
     log-info:
         runs-on: ubuntu-latest
         steps:
             - run: echo $GITHUB_REF
+# 21. Manually Triggering a Workflow from the GitHub Web UI, CLI and the REST API
