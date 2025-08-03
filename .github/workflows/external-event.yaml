@@ -9,4 +9,3 @@ jobs:
             - run: echo "Repository Dispatch"
             - run: echo ${{ github.event.client_payload.env }}
 
-# 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
