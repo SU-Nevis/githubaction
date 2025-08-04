@@ -12,12 +12,12 @@ jobs:
               run: echo 'Runs only on failure'
             - name: Runs on Success
               if: success()
-              # This is not needed (DEFAULT BEGAVIOUR)
+              # This is not needed (DEFAULT BEHAVIOUR)
               run: echo 'Runs on Succes'
             - name: Always Runs
               # if: success() || failure()
               if: always()
-              run: echo 'Always Runs  '
+              run: echo 'Always Runs'
             - name: Runs When Cancelled
               if: cancelled()
               run: echo 'Runs on Cancelled'
